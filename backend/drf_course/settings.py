@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-#Code enables our program to access environment variables
+#The imports below give us access to our environment variables in global manner
 from pathlib import Path
 from dotenv import load_dotenv
 import os
