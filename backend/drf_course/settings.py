@@ -115,7 +115,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'rest_course',
         'USER': 'postgres',
-        'PASSWORD': '12345678',
+        'PASSWORD': DATABASE_PASSWORD,
         'HOST': 'localhost',
         
     }
