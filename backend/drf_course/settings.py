@@ -67,6 +67,7 @@ DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD")
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'core.apps.CoreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
