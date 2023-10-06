@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 from dotenv import load_dotenv
 import os
+import psycopg2
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -67,6 +68,8 @@ DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD")
 # Application definition
 
 INSTALLED_APPS = [
+    'django_filters',
+    'django_extensions',
     'rest_framework',
     'core.apps.CoreConfig',
     'django.contrib.admin',
