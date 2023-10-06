@@ -36,6 +36,8 @@ DEBUG = int(os.environ.get("DEBUG", default=0))#this code replaced the above cod
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")#this code replaced the above code
 
 
+
+"""REST_FRAMEWORK variable is included to access DRF features"""
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'rest_framework_json_api.exceptions.exception_handler',
     'DEFAULT_PARSER_CLASSES': (
@@ -58,6 +60,7 @@ REST_FRAMEWORK = {
     ),
     'TEST_REQUEST_DEFAULT_FORMAT': 'vnd.api+json'
 }
+
 
 
 
