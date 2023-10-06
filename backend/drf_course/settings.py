@@ -61,7 +61,7 @@ REST_FRAMEWORK = {
     'TEST_REQUEST_DEFAULT_FORMAT': 'vnd.api+json'
 }
 
-
+DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD")
 
 
 # Application definition
