@@ -17,9 +17,10 @@ Including another URLconf
 
 from django.urls import path
 from django.contrib import admin
-from rest_framework import routers
+from rest_framework import routers#imported routers tool to automatically generate urlpatterns for our api
 
-router = routers.DefaultRouter()
+#DefaultRouter class is the most common router that generates URL patterns for all of the standard CRUD operations
+router = routers.DefaultRouter() 
 
 urlpatterns = router.urls
 
