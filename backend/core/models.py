@@ -8,12 +8,11 @@ class Contact(TimeStampedModel,ActivatorModel,TitleDescriptionModel):
     -ActivatorModel helps us with the status field to know the activated and deactivated date 
     -TitleDescriptionModel helps us with two character fields
     """
+    email = models.EmailField(verbose_name = "Email")
+
 
     class Meta:
         verbose_name_plural = "Contacts"
-
-    email = models.EmailField(verbose_name = "Email")
-
 
     def __str__(self):
         return f'{self.title}'
