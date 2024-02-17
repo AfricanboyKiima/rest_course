@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'django_filters',
     'django_extensions',
     'rest_framework',
+    'models_extensions'
     'core.apps.CoreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
