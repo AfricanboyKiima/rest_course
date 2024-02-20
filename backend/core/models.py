@@ -1,17 +1,17 @@
 from django.db import models
 from utils.model_abstracts import Model
-from django_extensions.db.models import (TimeStampedModel,ActivatorModel,TitleDescriptionModel)
+from django_extensions.db.models import TimeStampedModel,ActivatorModel,TitleDescriptionModel
 
-class Contact(TimeStampedModel,ActivatorModel,TitleDescriptionModel):
+class Contact(TimeStampedModel,ActivatorModel,TitleDescriptionModel,Model):
     """
-    -TimeStampModel provides us with the created field to help us know when something was created
-    -ActivatorModel helps us with the status field to know the activated and deactivated date 
-    -TitleDescriptionModel helps us with two character fields
+    -TimeStampModel - adds created and modified fields to our model
+    -ActivatorModel - adds is_active and activated_date fields to our models
+    -TitleDescriptionModel - adds title and Description fields to our models
     """
     email = models.EmailField(verbose_name = "Email")
 
 
-    class Meta:
+    class Meta:#class provides us with data about our data, in this case on our contact data
         verbose_name_plural = "Contacts"
 
     def __str__(self):

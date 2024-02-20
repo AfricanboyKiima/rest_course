@@ -68,8 +68,8 @@ DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD")
 
 INSTALLED_APPS = [
     'django_filters',
-    'django_extensions',
     'rest_framework',
+    'django_extensions',
     'core.apps.CoreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
