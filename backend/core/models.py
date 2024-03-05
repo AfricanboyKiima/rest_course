@@ -11,9 +11,8 @@ class Contact(TimeStampedModel,ActivatorModel,TitleDescriptionModel,Model):
     email = models.EmailField(verbose_name = "Email")
 
 
-    class Meta:#class provides us with data about our data, in this case on our contact data
+    class Meta:#class provides us with additional information about our data(object(contact)), in this case on our contact data
         verbose_name_plural = "Contacts"
 
     def __str__(self):
         return f'{self.title}'
-
